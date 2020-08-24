@@ -97,9 +97,3 @@ class pol
 		 display ();
 		}
 	     };
-	void main()
-	 {
-	  pol b,c;
-	  int m,n;
-	  char ch;
-	  cout<<"
