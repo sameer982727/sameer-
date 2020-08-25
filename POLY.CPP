@@ -115,12 +115,9 @@ class pol
 	      cout<<"do you want to enter more";
 	      cin>>ch;
 	   }
-
-	     while(ch=='y'||ch=='Y');
+          while(ch=='y'||ch=='Y');
 	  a.display();
-
-
-	   do
+         do
        {
 	   cout<<"enter the coefficent";
 	   cin>>c;
@@ -129,10 +126,9 @@ class pol
 	   b.create(c,d);
 	   cout<<"do you want to enter more";
 	   cin>>ch;
-
-       }
+	 }
        while(ch=='y'||ch=='Y');
-	b.display();
+       b.display();
        cout<<"the sum is:";
        a.sum(b);
        getch();
