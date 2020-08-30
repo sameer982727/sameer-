@@ -1,11 +1,11 @@
 #include<iostream.h>
 #include<conio.h>
-#include<string.h>
+#include<stdio.h>
 class in
  {
   public:
   int stack[100];
-  int top,m;
+  int top;
   in()
    {
     top=-1;
