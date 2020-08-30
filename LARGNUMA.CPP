@@ -30,6 +30,7 @@ class in
     };
    void main()
     {
+	clrscr();    
      in i,i1,i2;
      int sum=0,o;
      cout<<"enter the first number";
@@ -78,5 +79,5 @@ class in
 	      {
 	       i2.push(sum);
 	      }
+	         getch();
 	    }
-
