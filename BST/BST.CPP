@@ -128,9 +128,6 @@ class bst
 		   b.recursiveinorder(root);
 		   cout<<endl;
 		   break;
-	    case 5:
-	    exit(1);
-	    break;
 	    default: cout<<"wrong choice"<<endl;
 		  }
 	       }while(ch!=0);
