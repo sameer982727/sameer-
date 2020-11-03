@@ -12,7 +12,7 @@ class lowermat
              }
              ma[(a*(a-1))/2+b]=e;   
           }
-		  void display(int size)
+          void display(int size)
           {
               for(int i=1;i<=size;i++)
               {
