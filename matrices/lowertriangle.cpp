@@ -12,7 +12,7 @@ class lowermat
              }
              ma[(a*(a-1))/2+b]=e;   
           }
-          void display(int size)
+		  void display(int size)
           {
               for(int i=1;i<=size;i++)
               {
@@ -54,18 +54,24 @@ int main()
     lowermat l;
     cout<<"Enter the no of rows and columns in  matrx "<<endl;
     cin>>size;
-    for(i=1,j=1;i<=size,j<=size;i++,j++)
-    {
-        cout<<"Enter diagonal element of index ("<<i<<","<<j<<")"<<endl;
-        cin>>e;
-        l.insert(e,i,j);
-    }
-    cout<<"Your entered diagonal matrix is: "<<endl;
-    l.display(size);
-    cout<<"Enter row from which u want to retrieve the element: "<<endl;
-    cin>>a;
-    cout<<"Enter column from which u want to retrieve the element: "<<endl;
-    cin>>b;
-    cout<<"Retrieved element is: "<<l.retrieve(a,b,size)<<endl;
-    return 0;
+    for(i=1;i<=size;i++)
+     {
+     	for(j=1;j<=size;j++)
+     	 {
+     	 	if(i>=j)
+     	 	 {
+     	 	 	cout<<"enter the element of lower triangle matrix of index("<<i<<","<<j<<")"<<endl;
+     	 	 	cin>>e;
+     	 	 	l.insert(e,i,j);
+			   }
+		  }
+	 }
+        cout<<"enter the lower trianglular matrix is:"<<endl;
+        l.display(size);
+        cout<<"enter the row from which u want to retrieve the element"<<endl;
+        cin>>a;
+        cout<<"enter the column from which u want to retrieve the element"<<endl;
+        cin>>b;
+        cout<<"retrieved element is"<<l.retrieve(a,b,size)<<endl;
+        return 0;
 }
