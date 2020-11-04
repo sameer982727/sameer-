@@ -58,18 +58,24 @@ int main()
     symatrix s;
     cout<<"Enter the no of rows and columns in  matrx "<<endl;
     cin>>size;
-    for(i=1,j=1;i<=size,j<=size;i++,j++)
-    {
-        cout<<"Enter diagonal element of index ("<<i<<","<<j<<")"<<endl;
-        cin>>e;
-        s.insert(e,i,j);
-    }
-    cout<<"Your entered diagonal matrix is: "<<endl;
-    s.display(size);
-    cout<<"Enter row from which u want to retrieve the element: "<<endl;
-    cin>>a;
-    cout<<"Enter column from which u want to retrieve the element: "<<endl;
-    cin>>b;
-    cout<<"Retrieved element is: "<<s.retrieve(a,b,size)<<endl;
-    return 0;
+    for(i=1;i<=size;i++)
+     {
+     	for(j=1;j<=size;j++)
+     	 {
+     	 	if(j>=i)
+     	 	 {
+     	 	 	cout<<"enter the element of symmetric triangle matrix of index("<<i<<","<<j<<")"<<endl;
+     	 	 	cin>>e;
+     	 	 	s.insert(e,i,j);
+			   }
+		  }
+	 }
+        cout<<"enter the upper trianglular matrix is:"<<endl;
+        s.display(size);
+        cout<<"enter the row from which u want to retrieve the element"<<endl;
+        cin>>a;
+        cout<<"enter the column from which u want to retrieve the element"<<endl;
+        cin>>b;
+        cout<<"retrieved element is"<<s.retrieve(a,b,size)<<endl;
+        return 0;
 }
